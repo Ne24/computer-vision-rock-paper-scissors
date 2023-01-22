@@ -11,12 +11,12 @@ def get_computer_choice():
 
 def get_user_choice():
     """Gets users selection out of rock, paper scissors"""
-    user_input =  input("Select an option from rock, paper, scissors")
+    user_input =  input("Select an option from rock, paper, scissors ")
     user_input = user_input.title()
     return user_input
 
 def get_winner(computer_choice, user_choice):
-    """Determines the winner of the rock-paper-scissors game"""
+    """Determines the winner of the rock-paper-scissors game """
     if computer_choice == user_choice:
         print("It is a tie!")
     elif computer_choice == "Rock" and user_choice == "Scissors":
@@ -26,5 +26,14 @@ def get_winner(computer_choice, user_choice):
     elif computer_choice == "Scissors" and user_choice == "Paper":
         print("You lost!")
     else:
-        print("You won!") 
+        print("You won!")
     return
+
+def play():
+    """Play the rock-paper-scissors game"""
+
+    computer_choice = get_computer_choice()
+    user_choice = get_user_choice()
+    get_winner(computer_choice,user_choice)
+
+play()
