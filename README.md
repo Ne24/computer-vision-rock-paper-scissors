@@ -47,6 +47,8 @@ it calls the get_computer_choice function then the predicition_certainty fucntio
 
 If the computer wins a round it's score is increased by one, this is the same if the user wins a round, the first to pass 2 wins is the winner of the competiton. 
 
+![Alt text](Screenshot%20from%202023-01-29%2018-26-24.png)
+
 ```python
 def play():
     """Play the rock-paper-scissors game"""
